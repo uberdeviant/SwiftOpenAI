@@ -1,6 +1,5 @@
 import Foundation
 
-// swiftlint:disable line_length
 protocol CreateChatCompletionsStreamRequestProtocol {
     func execute(api: API,
                  apiKey: String,
@@ -55,7 +54,6 @@ final public class CreateChatCompletionsStreamRequest: NSObject, CreateChatCompl
         self.urlSession = urlSession
     }
 }
-// swiftlint:enable line_length
 
 extension CreateChatCompletionsStreamRequest: URLSessionDataDelegate {
     public func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didReceive data: Data) {

@@ -27,7 +27,6 @@ protocol OpenAIProtocol {
     func moderations(input: String) async throws -> ModerationDataModel?
 }
 
-// swiftlint:disable line_length
 public class SwiftOpenAI: OpenAIProtocol {
     private let api: API
     private let apiKey: String
@@ -326,4 +325,3 @@ public class SwiftOpenAI: OpenAIProtocol {
         try await moderationsRequest(api, apiKey, input)
     }
 }
-// swiftlint:enable line_length
